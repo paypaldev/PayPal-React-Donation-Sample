@@ -18,7 +18,7 @@
   <hr />
 </div>
 
-# PayPal React Donation
+# PayPal React Donation Sample
 
 This sample app shows how to add PayPal donations to your React application using the [react-paypal-js npm](https://www.npmjs.com/package/@paypal/react-paypal-js) package.
 
