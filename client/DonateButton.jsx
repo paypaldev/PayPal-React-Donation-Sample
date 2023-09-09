@@ -31,12 +31,13 @@ export default function DonateButton({ productId }) {
               body: JSON.stringify({
                 cart: [
                   {
-                    id: "YOUR_PRODUCT_ID",
-                    quantity: "YOUR_PRODUCT_QUANTITY",
+                    id: productIdRef.current,
+                    quantity: "1",
                   },
                 ],
               }),
             });
+
             const orderData = await response.json();
 
             if (orderData.id) {

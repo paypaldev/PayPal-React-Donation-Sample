@@ -53,18 +53,52 @@ const createOrder = async (cart) => {
 
   const accessToken = await generateAccessToken();
   const url = `${base}/v2/checkout/orders`;
+  const productId = cart[0].id;
+  let amount;
+  switch (productId) {
+    case "donation_5":
+      amount = "5.00";
+      break;
+    case "donation_20":
+      amount = "20.00";
+      break;
+    case "donation_100":
+      amount = "100.00";
+      break;
+    default:
+      console.log("invalid product ID received");
+      break;
+  }
   const payload = {
     intent: "CAPTURE",
     purchase_units: [
       {
+        items: [
+          {
+            name: "Donation to Kitty's House",
+            description:
+              "All proceeds directly support Kitty's House Cat Rescue. Thank you.",
+            quantity: "1",
+            unit_amount: {
+              currency_code: "USD",
+              value: amount,
+            },
+            category: "DONATION",
+          },
+        ],
         amount: {
           currency_code: "USD",
-          value: "100.00",
+          value: amount,
+          breakdown: {
+            item_total: {
+              currency_code: "USD",
+              value: amount,
+            },
+          },
         },
       },
     ],
   };
-
   const response = await fetch(url, {
     headers: {
       "Content-Type": "application/json",
