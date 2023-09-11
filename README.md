@@ -22,6 +22,11 @@
 
 This sample app shows how to add PayPal donations to your React application using the [react-paypal-js npm](https://www.npmjs.com/package/@paypal/react-paypal-js) package.
 
+## Open in Codespaces
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/paypaldev/PayPal-React-Donation-Sample?quickstart=1)
+
+When you open this repository in Codespaces, the app will automatically install and open. You can skip the install step and move on to [Add environment variables](#add-environment-variables).
+
 ## Run this project
 
 First, install the frontend and backend dependencies with `npm install`.
