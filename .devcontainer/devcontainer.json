@@ -13,7 +13,7 @@
   "forwardPorts": [8888, 3000],
   "portsAttributes": {
     "3000": {
-      "label": "Preview of Standard Checkout Flow",
+      "label": "Preview of React Donation Sample",
       "onAutoForward": "openBrowserOnce"
     }
   },
@@ -23,7 +23,7 @@
       "documentationUrl": "https://developer.paypal.com/dashboard/applications/sandbox"
     },
     "VITE_PAYPAL_CLIENT_ID": {
-      "description": "Sandbox client ID of the application.",
+      "description": "Sandbox client ID of the application. Same as `PAYPAL_CLIENT_ID`",
       "documentationUrl": "https://developer.paypal.com/dashboard/applications/sandbox"
     },
     "PAYPAL_CLIENT_SECRET": {
