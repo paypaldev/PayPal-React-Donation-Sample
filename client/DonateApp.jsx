@@ -1,6 +1,7 @@
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import DonateForm from "./DonateForm";
 import DonationCardText from "./DonationCardText";
+import DonationCard from "./DonationCard";
 
 export function DonateApp() {
   return (
@@ -11,9 +12,10 @@ export function DonateApp() {
         currency: "USD",
       }}
     >
-      <DonationCardText>
+      <DonationCard>
+        <DonationCardText />
         <DonateForm />
-      </DonationCardText>
+      </DonationCard>
     </PayPalScriptProvider>
   );
 }
