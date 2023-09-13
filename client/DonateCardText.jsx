@@ -1,4 +1,4 @@
-export default function DonationCardText() {
+export default function DonateCardText() {
   return (
     <>
       <h1 className="text-2xl md:text-5xl font-bold card-title pb-2">

@@ -1,6 +1,6 @@
 import catPhoto from "./assets/cat1.png";
 
-export default function DonationCard({ children }) {
+export default function DonateCard({ children }) {
   return (
     <>
       <div className="container w-[90%] md:w-[616px] grid justify-content-center h-96 py-8">
