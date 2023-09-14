@@ -4,8 +4,8 @@ export default function AmountPicker({ onAmountChange }) {
       <legend>Donation Amount</legend>
       <div className="form-control">
         <p>
-          To donate to Kitty's House, choose a donation amount and click the
-          PayPal Donate button. We appreciate your generosity and thank you for
+          To donate to Kitty's House, choose a donation amount and click one of
+          the Donate buttons. We appreciate your generosity and thank you for
           your support!
         </p>
         <label className="label">
@@ -46,4 +46,5 @@ export default function AmountPicker({ onAmountChange }) {
       </div>
     </fieldset>
   );
+  10;
 }
