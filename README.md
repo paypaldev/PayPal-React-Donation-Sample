@@ -20,6 +20,8 @@
 
 # PayPal React Donation Sample
 
+<p align="center"><img alt="screenshot of sample application showing a cat photo, text, and PayPal smart buttons" src="https://github.com/paypaldev/PayPal-React-Donation-Sample/assets/3941856/dd992562-4009-4e17-b272-de75bab1724a" height="750" /></p>
+
 This sample app shows how to add PayPal donations to your React application using the [react-paypal-js npm](https://www.npmjs.com/package/@paypal/react-paypal-js) package.
 
 ## Open in Codespaces
