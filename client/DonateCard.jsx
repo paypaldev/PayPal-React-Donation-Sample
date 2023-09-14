@@ -3,8 +3,8 @@ import catPhoto from "./assets/cat1.png";
 export default function DonateCard({ children }) {
   return (
     <>
-      <div className="container w-[90%] md:w-[616px] grid justify-content-center h-96 py-8">
-        <div className="card bg-base-100 shadow-xl ">
+      <div className="container w-[90%] md:w-[616px] grid justify-content-center  py-8">
+        <div className="card bg-base-100 shadow-xl">
           <figure>
             <img
               src={catPhoto}

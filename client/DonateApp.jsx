@@ -10,6 +10,7 @@ export function DonateApp() {
         "client-id": import.meta.env.VITE_PAYPAL_CLIENT_ID,
         components: "buttons",
         currency: "USD",
+        enableFunding: "venmo",
       }}
     >
       <DonateCard>

@@ -18,7 +18,6 @@ export default function DonateButton({ productId }) {
     <>
       <PayPalButtons
         style={{ label: "donate" }}
-        fundingSource="paypal"
         createOrder={async () => {
           try {
             const response = await fetch("/api/orders", {
